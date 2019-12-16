@@ -1,0 +1,239 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Делаем все картинки адаптивными*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Базовые стили*/
+a {
+    color: #b4ad9e;
+}
+
+a:hover {
+    color: #898377;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+h2, h3{
+    margin: 1rem, 0;
+    font-size: 30px;
+}
+
+/*Цвет заднего фона у блока навигации*/
+header .navbar-light {
+    background-color: #fff;
+}
+
+/*Логотип*/
+header .navbar-brand {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/*Кнопки навигации*/
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+header .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+/*Полоска разжимается под навигационной кнопкой*/
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+/*Слайдер*/
+.slider {
+    margin-bottom: 60px;
+}
+/*Пост*/
+.post-category,
+.link-more {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.post-title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.post-title a {
+    color: #626262;
+}
+
+.link {
+    margin-top: 55px;
+}
+
+.post-category {
+    margin-top: 30px;
+}
+
+/*Посты с картинками*/
+.grid-post{
+    margin-top: 135px;
+    margin-bottom: 100px;
+}
+
+.grid-post .card {
+    border: 0;
+    margin-bottom: 130px;
+}
+
+.grid-post .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid-post .card-img-top {
+    max-height: 350px;
+    border-radius: 0;
+}
+.img-container  {
+  height: 330px;
+ }
+ .img-container img {
+  width: 100%;
+  height: 100%;
+ }
+ .card {
+  height: auto;
+  width: 100%;
+ }
+/*Подписка на рассылку*/
+.signup {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+
+.signup h3 {
+    color: #333;
+}
+
+.signup form {
+    margin-top: 80px;
+}
+
+.signup .form-input {
+    position: relative;
+}
+
+.signup .form-control {
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.signup .form-control:focus {
+    box-shadow: none;
+}
+
+.form-input .btn {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+/*Кнопка Load more*/
+.load-more {
+    padding: 1rem 2rem;
+    border-color: #626262;
+    border-radius: 0;
+}
+
+.load-more span {
+    display: none;
+}
+/*Количество постов до нажатия кнопки Load more*/
+#boxs .box:nth-child(n+3) {
+  display: none;
+ }
+
+/*Footer*/
+footer {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    color: #000;
+}
+
+footer a {
+    color: #000;
+}
+
+.footer-left a{
+    margin-right: 20px;
+}
+
+.footer-right a{
+    margin-left: 20px;
+}
+
+/*Адаптивность*/
+@media only screen and (max-width:480px) {
+    .footer-left {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
